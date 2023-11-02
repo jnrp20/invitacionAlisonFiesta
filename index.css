@@ -1,0 +1,264 @@
+html{
+  scroll-behavior: smooth;
+
+}
+body {
+
+  margin: 0;
+  width: 100%;
+ 
+}
+h1 {
+  margin: 0;
+  font-family: "Callem";
+  font-size: 250px;
+  color: #be3b47;
+}
+h3 {
+  margin: 0;
+  font-family: "Callem";
+  font-size: 100px;
+}
+p {
+  margin: 0;
+  font-family: "Cutive Mono", monospace;
+  font-weight: 100;
+  color: #545454;
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: "Glacialindiference";
+  src: url(/fonts/GlacialIndifference-Regular.otf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Callem";
+  src: url(/fonts/callem-script.ttf);
+  font-weight: 900;
+}
+.body-container {
+  width: 100%;
+ /*sirve para qu elos objetos desborados no se vean */
+  height: auto;
+ 
+  /* background-color: aqua; */
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  /* background-color: blueviolet; */
+}
+
+.flores-container {
+  width: 100%;
+  height: auto;
+  background-color: blue; 
+  
+
+  
+}
+#fondof1,
+#fondof2 {
+  width: 800px;
+}
+#fondof1 {
+  position: absolute;
+  top: -490px;
+  left: -200px;
+}
+#fondof2 {
+  position: absolute;
+  z-index: -1;
+  top: -490px;
+  right: 0;
+  transform: scaleX(-1);
+}
+#florgrande {
+  z-index: -1;
+  width: 480px;
+  position: absolute;
+  top: -300px;
+  left: 39%;
+}
+#florpeque1,
+#florpeque2 {
+  width: 290px;
+}
+#florpeque1 {
+  position: absolute;
+  top: -180px;
+  left: 31%;
+}
+#florpeque2 {
+  position: absolute;
+  top: -180px;
+  right: 27%;
+}
+.txt-alison{
+  z-index: 1;
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(161, 36, 36); */
+  text-align: center;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+}
+
+.carta{
+  width: 100%;
+  height: auto;
+  margin-top: -2%;
+}
+.carta p{
+  text-align: center;
+  padding: 0 10%;
+  color: #000000;
+}
+.btn-sig{
+  margin: 2% 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.btn-sig img{
+  object-fit: cover;
+ 
+  height: 100px;
+  animation-name: salto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+ 
+}
+
+.info{
+  width: 100%;
+  
+  padding-top: 1%;
+  /* background-image: url(./img/mariposas\ rosadas.gif); */
+  
+  /* background-color: #e9b0b0; */
+}
+.fecha{
+  width: 100%;
+text-align: center;
+
+}
+.fecha h1{
+ 
+  font-size: 150px;
+}
+.fecha h2{
+  font-family: Glacialindiference;
+  color: #545454; 
+  font-size: 50px;
+  position: relative;
+
+}
+.fecha h2::before, .fecha h2::after{
+  /* el content es obligatorio ponerlo para que se muestre el before */ content: ' ';position: absolute;border-top: 5px solid #be3b47  ;
+} 
+
+.fecha h2::before{
+ 
+    top: -15px;
+   width: 29%;
+   
+   }
+.fecha h2::after{
+ bottom: -15px;
+  left: 35.7%;
+   width: 29%;
+}
+
+.cards{
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+
+}
+
+.cards-container{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.logos-padre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.logos-padre p{
+  
+  font-size: 40px;
+  
+}
+.logos{
+width: 30%;
+margin-bottom: 2%;
+background-color: #be3b47;
+border-radius: 50%;
+/* AQUI EL display sirve para que la imagen cubra el total del div */
+display: flex;
+padding: 8%;
+box-shadow: -1px 0px 20px 3px rgba(0,0,0,0.75);
+}
+.logos:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: #545454;
+}
+.logos img{
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footerPag{
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+
+
+@keyframes salto {
+  50%{
+    transform: translate(0, -20px);
+  }
+  
+  
+}
+@-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  } 
