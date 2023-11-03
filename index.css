@@ -39,6 +39,7 @@ p {
 }
 .body-container {
   width: 100%;
+  z-index: -2;
  /*sirve para qu elos objetos desborados no se vean */
   height: auto;
  
@@ -142,7 +143,7 @@ p {
   width: 100%;
   
   padding-top: 1%;
-  /* background-image: url(./img/mariposas\ rosadas.gif); */
+  background-image: url(./img/prueba-unscreen.gif);
   
   /* background-color: #e9b0b0; */
 }
@@ -170,11 +171,11 @@ text-align: center;
  
     top: -15px;
    width: 29%;
-   
+   left: 35.5%;
    }
 .fecha h2::after{
  bottom: -15px;
-  left: 35.7%;
+  right: 35.5%;
    width: 29%;
 }
 
@@ -218,7 +219,7 @@ box-shadow: -1px 0px 20px 3px rgba(0,0,0,0.75);
 .logos:hover{
   cursor: pointer;
   transition: 0.5s;
-  background-color: #545454;
+  background-color: #d46aa1;
 }
 .logos img{
  
@@ -228,11 +229,120 @@ box-shadow: -1px 0px 20px 3px rgba(0,0,0,0.75);
 }
 
 .footerPag{
+  display: flex;
+ position: relative;
+
   width: 100%;
   height: 100vh;
-  background-color: antiquewhite;
+ 
+  z-index: -1;
+  overflow-y: hidden;
 }
 
+.info-foot{
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+#derechaInfo{
+  padding-left: 20%;
+
+}
+#izquierdaInfo{
+
+
+
+  padding: 0 7%;
+}
+.info-foot h2{
+  color: rgb(63, 63, 63);
+  margin-bottom: 8%;
+  
+}
+.logo-texto{
+  display: flex;
+  align-items: center;
+ margin: 2% 0;
+  width: 100%;
+  height: auto;
+}
+.logo-texto p{
+  margin-left: 10px;
+  font-size: 25px;
+}
+.logo-texto img{
+  width: 5%;
+  padding: 2%;
+  border-radius: 30%;
+  object-fit: contain;
+  background-color: #d391b3 ;
+}
+
+.redes{
+  display: flex;
+  justify-content: left;
+ 
+  width: 100%;
+  height: 30px;
+}
+.redes img{
+margin: 8% 5px;
+padding: 2%;
+  border-radius: 30%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #d391b3;
+}
+
+
+
+#fondof1footer,
+#fondof2footer {
+  width: 800px;
+  transform: rotate(180deg);
+}
+#fondof1footer {
+  position: absolute;
+  rotate: (90deg);
+  bottom: -490px;
+  left: -200px;
+}
+#fondof2footer {
+  
+  position: absolute;
+  z-index: -1;
+  bottom: -490px;
+  right: 0;
+  transform: scaleX(-1);
+  
+}
+#florgrandefooter {
+  transform: rotate(180deg);
+  z-index: -1;
+  width: 480px;
+  position: absolute;
+  bottom: -300px;
+  left: 39%;
+}
+#florpeque1footer,
+#florpeque2footer {
+  width: 290px;
+  transform: rotate(180deg);
+}
+#florpeque1footer {
+
+  position: absolute;
+  bottom: -180px;
+  left: 31%;
+}
+#florpeque2footer {
+  position: absolute;
+  bottom: -180px;
+  right: 27%;
+}
 
 
 @keyframes salto {
