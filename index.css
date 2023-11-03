@@ -26,7 +26,11 @@ p {
   color: #545454;
   font-size: 30px;
 }
-
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; /* Esto elimina el subrayado predeterminado de los enlaces */
+}
 @font-face {
   font-family: "Glacialindiference";
   src: url(/fonts/GlacialIndifference-Regular.otf);
@@ -77,7 +81,7 @@ p {
   transform: scaleX(-1);
 }
 #florgrande {
-  z-index: -1;
+
   width: 480px;
   position: absolute;
   top: -300px;
@@ -227,21 +231,30 @@ box-shadow: -1px 0px 20px 3px rgba(0,0,0,0.75);
   height: 100%;
   object-fit: cover;
 }
+.titulo{
+  margin-top: 5%;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.titulo h1{
+  font-size: 150px;
+}
 
 .footerPag{
   display: flex;
  position: relative;
 
   width: 100%;
-  height: 100vh;
+  height: 70vh;
  
-  z-index: -1;
+  z-index: 2;
   overflow-y: hidden;
 }
 
 .info-foot{
   width: 100%;
-  margin-top: 10%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,11 +270,7 @@ box-shadow: -1px 0px 20px 3px rgba(0,0,0,0.75);
 
   padding: 0 7%;
 }
-.info-foot h2{
-  color: rgb(63, 63, 63);
-  margin-bottom: 8%;
-  
-}
+
 .logo-texto{
   display: flex;
   align-items: center;
@@ -284,18 +293,21 @@ box-shadow: -1px 0px 20px 3px rgba(0,0,0,0.75);
 .redes{
   display: flex;
   justify-content: left;
- 
+
   width: 100%;
-  height: 30px;
+  
 }
 .redes img{
-margin: 8% 5px;
-padding: 2%;
+  width:40px;
+   height: 40px;
+margin: 20% 10px;
+padding: 8%;
   border-radius: 30%;
-  height: 100%;
+ 
   object-fit: contain;
   background-color: #d391b3;
 }
+
 
 
 
@@ -313,7 +325,7 @@ padding: 2%;
 #fondof2footer {
   
   position: absolute;
-  z-index: -1;
+z-index: -1;
   bottom: -490px;
   right: 0;
   transform: scaleX(-1);
@@ -321,7 +333,7 @@ padding: 2%;
 }
 #florgrandefooter {
   transform: rotate(180deg);
-  z-index: -1;
+
   width: 480px;
   position: absolute;
   bottom: -300px;
