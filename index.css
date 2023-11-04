@@ -6,6 +6,10 @@ body {
 
   margin: 0;
   width: 100%;
+  height: auto;
+ background-image: url(img/marco.png) ;
+ background-repeat: no-repeat, repeat;
+ background-size: cover;
  
 }
 h1 {
@@ -18,6 +22,10 @@ h3 {
   margin: 0;
   font-family: "Callem";
   font-size: 100px;
+}
+h4{
+  font-family: Glacialindiference;
+  font-weight: 200;
 }
 p {
   margin: 0;
@@ -50,6 +58,10 @@ a {
   /* background-color: aqua; */
 }
 
+.section1-container-responsive{
+  display: none;
+}
+
 .header {
   width: 100%;
   height: auto;
@@ -59,7 +71,7 @@ a {
 .flores-container {
   width: 100%;
   height: auto;
-  background-color: blue; 
+ 
   
 
   
@@ -154,7 +166,13 @@ a {
 .fecha{
   width: 100%;
 text-align: center;
-
+position: relative;
+}
+#nuneca{
+  position: absolute;
+  
+  top: 0;
+  left: -300px;
 }
 .fecha h1{
  
@@ -174,13 +192,13 @@ text-align: center;
 .fecha h2::before{
  
     top: -15px;
-   width: 29%;
-   left: 35.5%;
+   width: 44%;
+   left: 28%;
    }
 .fecha h2::after{
  bottom: -15px;
-  right: 35.5%;
-   width: 29%;
+  right: 28%;
+   width: 44%;
 }
 
 .cards{
@@ -287,7 +305,7 @@ box-shadow: -1px 0px 20px 3px rgba(0,0,0,0.75);
   padding: 2%;
   border-radius: 30%;
   object-fit: contain;
-  background-color: #d391b3 ;
+  background-color: #be3b47  ;
 }
 
 .redes{
@@ -305,7 +323,7 @@ padding: 8%;
   border-radius: 30%;
  
   object-fit: contain;
-  background-color: #d391b3;
+  background-color: #be3b47;
 }
 
 
@@ -319,14 +337,14 @@ padding: 8%;
 #fondof1footer {
   position: absolute;
   rotate: (90deg);
-  bottom: -490px;
+  bottom: -500px;
   left: -200px;
 }
 #fondof2footer {
   
   position: absolute;
 z-index: -1;
-  bottom: -490px;
+  bottom: -500px;
   right: 0;
   transform: scaleX(-1);
   
@@ -336,8 +354,8 @@ z-index: -1;
 
   width: 480px;
   position: absolute;
-  bottom: -300px;
-  left: 39%;
+  bottom: -350px;
+  left: 35%;
 }
 #florpeque1footer,
 #florpeque2footer {
@@ -384,3 +402,144 @@ z-index: -1;
   opacity: 1;
   }
   } 
+  @media (width < 1000px) {
+    body{
+      background-image: none;
+    }
+
+   
+    .body-container{
+      display: none;
+      
+    }
+    .section1-container-responsive{
+      display: block;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    
+    }
+    .flores-container{
+     
+display: flex;
+position: absolute;
+    }
+
+.section1-container-responsive h1{
+  text-align: center;
+  margin-top: 22vh ;
+  margin-right: 5vw;
+  font-size: 100px;
+  
+}
+#alison{
+  margin-top: 0;
+}
+
+
+    #fondof1,
+#fondof2 {
+  width: 500px;
+  position: absolute;
+  top: -10vh;
+   
+}
+#fondof1 {
+ 
+ 
+ transform: rotate(-20deg);
+  left: -105vw; 
+}
+#fondof2 {
+
+  transform: rotate(20deg);
+
+  right: -105vw;
+ 
+ 
+} 
+#florgrande {
+
+  width: 80vw;
+  position: absolute;
+  top: -20vh;
+  left: 18vw;
+}
+#florpeque1,
+#florpeque2 {
+  width: 60vw;
+  position: absolute;
+  top: -15vh;
+}
+ #florpeque1 {
+  
+  left: -5vw;
+} 
+#florpeque2 {
+  
+  right: -20vw;
+} 
+
+#florpeque3, #florpeque4{
+  top: 30vh;
+  width: 60vw;
+  position: absolute;
+}
+#florpeque3{
+  left: -35vw;
+  
+}
+
+#florpeque4{
+  right: -35vw;
+  transform: scaleX(-1);
+  transform: rotate(180deg);
+}
+#florpeque5, #florpeque6{
+  bottom: -8vh;
+  width: 60vw;
+  position: absolute;
+}
+#florpeque5{
+  left: -25vw;
+  transform: rotate(45deg);
+  transform: scaleX(-1);
+}
+
+#florpeque6{
+  right: -25vw;
+  
+ 
+}
+
+#fondof3{
+  z-index: -1;
+  position:absolute;
+  bottom: -70vh;
+
+
+}
+.fecha{
+  display: block;
+}
+.fecha h2{
+  font-size: 25px;
+}
+.fecha h4{
+  font-weight: 200;
+  color: #545454;
+  font-size: 25px;
+}
+
+.btn-sig img{
+height: 40px;
+height: 40px;
+}
+.section2-responsive{
+  width: 100vw;
+  height: 100vh;
+  background-color: #d35e5e;
+}
+  }
