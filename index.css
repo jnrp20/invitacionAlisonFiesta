@@ -1,16 +1,13 @@
-html{
+html {
   scroll-behavior: smooth;
-
 }
 body {
-
   margin: 0;
   width: 100%;
   height: auto;
- background-image: url(img/marco.png) ;
- background-repeat: no-repeat, repeat;
- background-size: cover;
- 
+  background-image: url(img/marco.png);
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%;
 }
 h1 {
   margin: 0;
@@ -23,7 +20,7 @@ h3 {
   font-family: "Callem";
   font-size: 100px;
 }
-h4{
+h4 {
   font-family: Glacialindiference;
   font-weight: 200;
 }
@@ -52,13 +49,13 @@ a {
 .body-container {
   width: 100%;
   z-index: -2;
- /*sirve para qu elos objetos desborados no se vean */
+  /*sirve para qu elos objetos desborados no se vean */
   height: auto;
- 
+
   /* background-color: aqua; */
 }
 
-.section1-container-responsive{
+.section1-container-responsive {
   display: none;
 }
 
@@ -71,10 +68,6 @@ a {
 .flores-container {
   width: 100%;
   height: auto;
- 
-  
-
-  
 }
 #fondof1,
 #fondof2 {
@@ -93,7 +86,6 @@ a {
   transform: scaleX(-1);
 }
 #florgrande {
-
   width: 480px;
   position: absolute;
   top: -300px;
@@ -113,7 +105,7 @@ a {
   top: -180px;
   right: 27%;
 }
-.txt-alison{
+.txt-alison {
   z-index: 1;
   margin-top: 10%;
   width: 100%;
@@ -126,96 +118,94 @@ a {
   animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  
 }
 
-.carta{
+.carta {
   width: 100%;
   height: auto;
   margin-top: -2%;
 }
-.carta p{
+.carta p {
   text-align: center;
   padding: 0 10%;
   color: #000000;
 }
-.btn-sig{
+.btn-sig {
   margin: 2% 0;
   text-align: center;
   width: 100%;
   height: auto;
 }
-.btn-sig img{
+.btn-sig img {
   object-fit: cover;
- 
+
   height: 100px;
   animation-name: salto;
   animation-duration: 2s;
   animation-iteration-count: infinite;
- 
 }
 
-.info{
+.info {
   width: 100%;
-  
+
   padding-top: 1%;
   /* background-image: url(./img/prueba-unscreen.gif); */
-  
+
   /* background-color: #e9b0b0; */
 }
-.fecha{
+.fecha {
   width: 100%;
-text-align: center;
-position: relative;
+  text-align: center;
+  position: relative;
 }
-#nuneca{
+#nuneca {
   position: absolute;
-  
+
   top: 0;
   left: -300px;
 }
-.fecha h1{
- 
+.fecha h1 {
   font-size: 150px;
 }
-.fecha h2{
+.fecha h2 {
   font-family: Glacialindiference;
-  color: #545454; 
+  color: #545454;
   font-size: 50px;
   position: relative;
-
 }
-.fecha h2::before, .fecha h2::after{
-  /* el content es obligatorio ponerlo para que se muestre el before */ content: ' ';position: absolute;border-top: 5px solid #be3b47  ;
-} 
+.fecha h2::before,
+.fecha h2::after {
+  /* el content es obligatorio ponerlo para que se muestre el before */
+  content: " ";
+  position: absolute;
+  border-top: 5px solid #be3b47;
+}
 
-.fecha h2::before{
- 
-    top: -15px;
-   width: 44%;
-   left: 28%;
-   }
-.fecha h2::after{
- bottom: -15px;
+.fecha h2::before {
+  top: -15px;
+  width: 44%;
+  left: 28%;
+}
+.fecha h2::after {
+  bottom: -15px;
   right: 28%;
-   width: 44%;
+  width: 44%;
 }
 
-.cards{
+.cards {
   margin-top: 2%;
   width: 100%;
   display: flex;
   position: relative;
   justify-content: space-around;
-
 }
 
-.cards-container{
+.cards-container {
   display: flex;
   justify-content: space-around;
   width: 80%;
 }
-.logos-padre{
+.logos-padre {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,111 +213,100 @@ position: relative;
   width: auto;
   height: auto;
 }
-.logos-padre p{
-  
+.logos-padre p {
   font-size: 40px;
-  
 }
-.logos{
-width: 30%;
-margin-bottom: 2%;
-background-color: #be3b47;
-border-radius: 50%;
-/* AQUI EL display sirve para que la imagen cubra el total del div */
-display: flex;
-padding: 8%;
-box-shadow: -1px 0px 20px 3px rgba(0,0,0,0.75);
+.logos {
+  width: 30%;
+  margin-bottom: 2%;
+  background-color: #be3b47;
+  border-radius: 50%;
+  /* AQUI EL display sirve para que la imagen cubra el total del div */
+  display: flex;
+  padding: 8%;
+  box-shadow: -1px 0px 20px 3px rgba(0, 0, 0, 0.75);
 }
-.logos:hover{
+.logos:hover {
   cursor: pointer;
   transition: 0.5s;
   background-color: #d46aa1;
 }
-.logos img{
- 
+.logos img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.titulo{
+.titulo {
   margin-top: 5%;
   text-align: center;
   width: 100%;
   height: auto;
 }
-.titulo h1{
+.titulo h1 {
   font-size: 150px;
 }
 
-.footerPag{
+.footerPag {
   display: flex;
- position: relative;
+  position: relative;
 
   width: 100%;
   height: 70vh;
- 
+
   z-index: 2;
   overflow-y: hidden;
 }
 
-.info-foot{
+.info-foot {
   width: 100%;
   margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
-#derechaInfo{
+#derechaInfo {
   padding-left: 20%;
-
 }
-#izquierdaInfo{
-
-
-
+#izquierdaInfo {
+  margin-right: 10%;
   padding: 0 7%;
 }
 
-.logo-texto{
+.logo-texto {
   display: flex;
   align-items: center;
- margin: 2% 0;
+  margin: 2% 0;
   width: 100%;
   height: auto;
 }
-.logo-texto p{
+.logo-texto p {
   margin-left: 10px;
   font-size: 25px;
 }
-.logo-texto img{
+.logo-texto img {
   width: 5%;
   padding: 2%;
   border-radius: 30%;
   object-fit: contain;
-  background-color: #be3b47  ;
+  background-color: #be3b47;
 }
 
-.redes{
+.redes {
   display: flex;
   justify-content: left;
 
   width: 100%;
-  
 }
-.redes img{
-  width:40px;
-   height: 40px;
-margin: 20% 10px;
-padding: 8%;
+.redes img {
+  width: 40px;
+  height: 40px;
+  margin: 20% 10px;
+  padding: 8%;
   border-radius: 30%;
- 
+
   object-fit: contain;
   background-color: #be3b47;
 }
-
-
-
 
 #fondof1footer,
 #fondof2footer {
@@ -341,13 +320,11 @@ padding: 8%;
   left: -200px;
 }
 #fondof2footer {
-  
   position: absolute;
-z-index: -1;
+  z-index: -1;
   bottom: -500px;
   right: 0;
   transform: scaleX(-1);
-  
 }
 #florgrandefooter {
   transform: rotate(180deg);
@@ -363,7 +340,6 @@ z-index: -1;
   transform: rotate(180deg);
 }
 #florpeque1footer {
-
   position: absolute;
   bottom: -180px;
   left: 31%;
@@ -374,172 +350,379 @@ z-index: -1;
   right: 27%;
 }
 
-
 @keyframes salto {
-  50%{
+  50% {
     transform: translate(0, -20px);
   }
-  
-  
 }
 @-webkit-keyframes zoomIn {
   0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
-  opacity: 1;
+    opacity: 1;
   }
-  }
-  @keyframes zoomIn {
+}
+@keyframes zoomIn {
   0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
-  opacity: 1;
+    opacity: 1;
   }
-  } 
-  @media (width < 1000px) {
-    body{
-      background-image: none;
-    }
-
-   
-    .body-container{
-      display: none;
-      
-    }
-    .section1-container-responsive{
-      display: block;
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow-x: hidden;
-      overflow-y: hidden;
-    
-    }
-    .flores-container{
-     
-display: flex;
-position: absolute;
-    }
-
-.section1-container-responsive h1{
-  text-align: center;
-  margin-top: 22vh ;
-  margin-right: 5vw;
-  font-size: 100px;
-  
-}
-#alison{
-  margin-top: 0;
 }
 
-
-    #fondof1,
-#fondof2 {
-  width: 500px;
-  position: absolute;
-  top: -10vh;
-   
-}
-#fondof1 {
- 
- 
- transform: rotate(-20deg);
-  left: -105vw; 
-}
-#fondof2 {
-
-  transform: rotate(20deg);
-
-  right: -105vw;
- 
- 
-} 
-#florgrande {
-
-  width: 80vw;
-  position: absolute;
-  top: -20vh;
-  left: 18vw;
-}
-#florpeque1,
-#florpeque2 {
-  width: 60vw;
-  position: absolute;
-  top: -15vh;
-}
- #florpeque1 {
-  
-  left: -5vw;
-} 
-#florpeque2 {
-  
-  right: -20vw;
-} 
-
-#florpeque3, #florpeque4{
-  top: 30vh;
-  width: 60vw;
-  position: absolute;
-}
-#florpeque3{
-  left: -35vw;
-  
+.cartaR,
+.section2-responsive,
+.section1-container-responsive,
+.section3-responsive,
+.cards-containerF,
+.logos-padreF,
+.logosF,
+#nunecaF,
+.section4F {
+  display: none;
 }
 
-#florpeque4{
-  right: -35vw;
-  transform: scaleX(-1);
-  transform: rotate(180deg);
-}
-#florpeque5, #florpeque6{
-  bottom: -8vh;
-  width: 60vw;
-  position: absolute;
-}
-#florpeque5{
-  left: -25vw;
-  transform: rotate(45deg);
-  transform: scaleX(-1);
-}
-
-#florpeque6{
-  right: -25vw;
-  
- 
-}
-
-#fondof3{
-  z-index: -1;
-  position:absolute;
-  bottom: -70vh;
-
-
-}
-.fecha{
-  display: block;
-}
-.fecha h2{
-  font-size: 25px;
-}
-.fecha h4{
-  font-weight: 200;
-  color: #545454;
-  font-size: 25px;
-}
-
-.btn-sig img{
-height: 40px;
-height: 40px;
-}
-.section2-responsive{
-  width: 100vw;
-  height: 100vh;
-  background-color: #d35e5e;
-}
+@media (width < 1000px) {
+  body {
+    background-image: none;
   }
+
+  .body-container {
+    display: none;
+  }
+  .section1-container-responsive {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .flores-container {
+    display: flex;
+    position: absolute;
+  }
+
+  .section1-container-responsive h1 {
+    text-align: center;
+    margin-top: 22vh;
+    margin-right: 5vw;
+    font-size: 100px;
+  }
+  #alison {
+    margin-top: 0;
+  }
+
+  #fondof1,
+  #fondof2 {
+    width: 500px;
+    position: absolute;
+    top: -10vh;
+  }
+  #fondof1 {
+    transform: rotate(-20deg);
+    left: -105vw;
+  }
+  #fondof2 {
+    transform: rotate(20deg);
+
+    right: -105vw;
+  }
+  #florgrande {
+    width: 80vw;
+    position: absolute;
+    top: -20vh;
+    left: 18vw;
+  }
+  #florpeque1,
+  #florpeque2 {
+    width: 60vw;
+    position: absolute;
+    top: -15vh;
+  }
+  #florpeque1 {
+    left: -5vw;
+  }
+  #florpeque2 {
+    right: -20vw;
+  }
+
+  #florpeque3,
+  #florpeque4 {
+    top: 30vh;
+    width: 60vw;
+    position: absolute;
+  }
+  #florpeque3 {
+    left: -35vw;
+  }
+
+  #florpeque4 {
+    right: -35vw;
+    transform: scaleX(-1);
+    transform: rotate(180deg);
+  }
+  #florpeque5,
+  #florpeque6 {
+    bottom: -8vh;
+    width: 60vw;
+    position: absolute;
+  }
+  #florpeque5 {
+    left: -25vw;
+    transform: rotate(45deg);
+    transform: scaleX(-1);
+  }
+
+  #florpeque6 {
+    right: -25vw;
+  }
+
+  .fecha {
+    display: block;
+  }
+  .fecha h2 {
+    font-size: 25px;
+  }
+  .fecha h4 {
+    font-weight: 200;
+    color: #545454;
+    font-size: 25px;
+  }
+
+  .btn-sig img {
+    height: 40px;
+    height: 40px;
+  }
+  .section2-responsive {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/marco.png);
+    background-repeat: no-repeat, repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+
+    /* el primer valor quivale al tamaño del width y el segundo al del height */
+    background-size: 100% 105%;
+  }
+  .cartaR {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 65%;
+    height: 75%;
+  }
+
+  .cartaR p {
+    vertical-align: middle;
+    line-height: 110%;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section3-responsive {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(img/marco.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 100% 105%;
+  }
+  #florArribaS3,
+  #florAbajoS3 {
+    width: 70vw;
+    height: 30vh;
+    position: absolute;
+  }
+
+  #florArribaS3 {
+    transform: rotate(90deg);
+    top: -10vh;
+    left: -15vw;
+  }
+  #florAbajoS3 {
+    transform: rotate(90deg);
+    transform: scaleX(-1);
+    bottom: -130px;
+    right: -25vw;
+  }
+
+  .cardsSection3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards-containerF {
+    width: 70vw;
+    height: 80vh;
+    /*     background-color: #000;
+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logosF {
+    width: 50%;
+    height: 20%;
+
+    background-color: #be3b47;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 100%;
+  }
+  .logosF a {
+    text-align: center;
+  }
+
+  .logosF img {
+    width: 60%;
+    object-fit: contain;
+    height: 100%;
+  }
+
+  .section4F {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/marco.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 100% 105%;
+  }
+  #nunecaF {
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    left: -40vw;
+    width: 100%;
+    height: 50%;
+  }
+  .section4F-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .section4F-container h1 {
+    font-size: 80px;
+    margin-top: 30%;
+  }
+  .infologosarriba {
+    width: 80vw;
+    height: auto;
+  }
+  .textologo {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+  }
+  .tamanoimg1 {
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+    width: 17%;
+    height: auto;
+    background-color: #be3b47;
+    border-radius: 30%;
+  }
+  .tamanoimg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0;
+    width: 15%;
+    height: 40px;
+    background-color: #be3b47;
+    border-radius: 30%;
+  }
+  .tamanoimg3 {
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+    width: 15%;
+    height: 40px;
+    background-color: #be3b47;
+    border-radius: 30%;
+    justify-content: center;
+  }
+  .tamanoimg1 img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  .tamanoimg2 img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  .tamanoimg3 img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .textologo p {
+    font-size: 18px;
+    margin-left: 5%;
+  }
+ .tamanotextocorreo{
+  width: 20%;
+ }
+ .tamanotextocorreo p{
+  font-size: 16px;
+ }
+ .infologoabajo{
+  position: absolute;
+  width: 73vw;
+  height: 40vh;
+  bottom: 0vh;
+  right: 0;
+  padding-right: 3%;
+  padding-left: 5%;
+ }
+
+ .infologoabajo p{
+  font-size: 18px;
+ }
+ .redesabajo{
+  width: 40%;
+  height: auto;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50%;
+  margin-left: 28%;
+ }
+ .redesabajo img{
+  height: 25px;
+  background-color: #be3b47;
+  border-radius: 30%;
+  padding: 15%;
+
+ }
+ 
+ @keyframes escribir {
+  from { width: 100% }
+  to { width:0 }
+}
+
+}
